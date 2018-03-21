@@ -15,7 +15,6 @@ class HomePage(BasePage) :
     def click_on_account(self):
         account_button = self.driver.find_element_by_id("com.google.android.youtube:id/mobile_topbar_avatar")
         account_button.click()
-        print account_button.is_displayed()
         if account_button.is_displayed():
             account_button.click()
 
